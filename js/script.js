@@ -31,6 +31,7 @@ function resposta(){
         window.location.reload()//recarrega a página
     }else{
     document.getElementById('quiz').style.display = 'none'
+    resultado.style.display='flex'
     
     var score = 0
     if(Q1[0].value == 'c'){
