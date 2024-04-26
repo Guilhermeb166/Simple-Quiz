@@ -1,3 +1,10 @@
+function voltar(numAtual,numAnterior){
+    let questAtual = document.querySelector('.quest' + numAtual)
+    let questAnterior = document.querySelector('.quest'+ numAnterior)
+
+    questAtual.style.display = 'none';
+    questAnterior.style.display = 'block';
+}
 function avancar(numAtual,proxNum){
     let questAtual = document.querySelector('.quest' + numAtual)
     let proxQuest = document.querySelector('.quest'+ proxNum)
