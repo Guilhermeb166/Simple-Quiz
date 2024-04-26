@@ -17,7 +17,7 @@ body{
     box-shadow: 1px 3px 3px black;
     margin: auto;
     width: 550px;
-    height: 450px;
+    height: 475px;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
@@ -49,17 +49,18 @@ input[type="radio"]:checked + label {
     border:3px solid #0044ff;
 }
 
-.quest04 label{
-   padding: 5px;
-}
 .quest02,.quest03,.quest04,.quest05{
     display: none;
 }
-.proximo,#result{
+.botoes{
+    display: flex;
+}
+.botoes .anterior{
+    margin: auto;
+}
+.proximo,#result,.anterior{
     background-color: #b7b6b6;
     display: block;
-    margin: auto;
-    
     padding: 10px;
     font-weight: 700;
     border: 1px solid rgba(0, 0, 0, 0.495);
@@ -67,13 +68,16 @@ input[type="radio"]:checked + label {
     border-radius: 5px;
     cursor: pointer;
 }
-.proximo:hover{
+.proximo,#result{
+    margin: auto;
+}
+.proximo:hover,.anterior:hover{
     background-color: #969696;
 }
 #resultFinal{
     color: #fff;
     font: 700 3em arial;
-    display: flex;
+    display: none;
     height: 100vh;
     align-items: center;
     justify-content: center;

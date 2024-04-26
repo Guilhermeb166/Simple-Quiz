@@ -30,7 +30,10 @@
             <label for="q2c">c)Ruby</label>
             <input type="radio" id="q2d" name="q2" value="d">
             <label for="q2d">d)PHP</label>
-            <button class="proximo" onclick="avancar('02','03')">Próxima questão</button>
+            <div class="botoes">
+                <button class="anterior" onclick="voltar('02','01')">Questão Anterior</button>
+                <button class="proximo" onclick="avancar('02','03')">Próxima questão</button>
+            </div>
         </div>
         <div id="Question03" class="question quest03">
             <h3>Pergunta 03: Qual foi a primeira linguagem de programação? </h3>
@@ -42,7 +45,10 @@
             <label for="q3c">c)COBOL</label>
             <input type="radio" id="q3d" name="q3" value="d">
             <label for="q3d">d)Fortran</label>
-            <button class="proximo" onclick="avancar('03','04')">Próxima questão</button>
+            <div class="botoes">
+                <button class="anterior" onclick="voltar('03','02')">Questão Anterior</button>
+                <button class="proximo" onclick="avancar('03','04')">Próxima questão</button>
+            </div>
         </div>
         <div id="Question04" class="question quest04">
             <h3>Pergunta 04:Qual é a função do método forEach em JavaScript?</h3>
@@ -55,7 +61,10 @@
             <label for="q4c">c)O método forEach é usado para adicionar um novo elemento a um array.</label>
             <input type="radio" id="q4d" name="q4" value="d">
             <label for="q4d">d)O método forEach é usado para ordenar os elementos de um array em ordem alfabética.</label>
-            <button class="proximo" onclick="avancar('04','05')">Próxima questão</button>
+            <div class="botoes">
+                <button class="anterior" onclick="voltar('04','03')">Questão Anterior</button>
+                <button class="proximo" onclick="avancar('04','05')">Próxima questão</button>
+            </div>
         </div>
         <div id="Question05" class="question quest05">
             <h3>Pergunta 05: Qual das seguintes opções melhor descreve a diferença entre o front end e o back end em uma aplicação web? </h3>
@@ -67,6 +76,7 @@
             <label for="q5c">c)O front end é responsável pela apresentação e interação do usuário, enquanto o back end gerencia a lógica e o armazenamento de dados.</label>
             <input type="radio" id="q5d" name="q5" value="d">
             <label for="q5d">d) O front end refere-se às tecnologias utilizadas para acessar a internet, enquanto o back end se concentra na segurança da rede.</label> 
+            <button class="anterior" onclick="voltar('05','04')">Questão Anterior</button>
             <button id="result" onclick="resposta()">Enviar Respostas </button>
         </div>
        
