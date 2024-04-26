@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de programação</title>
+    <link rel="stylesheet" href="estilo/style.css">
+</head>
+<body>
+    <section id="quiz">
+        <div id="Question01" class="question quest01">
+            <h3>Pergunta 01: Qual item só tem linguagem de programação?</h3>
+            <input type="radio"  id="q1a" name="q1" value="a">
+            <label for="q1a">a)JavaScript, Python, HTML, Ruby, SQL</label>
+            <input type="radio" id="q1b" name="q1" value="b">
+            <label for="q1b">b)Java, C, HTML, CSS, Git, PHP</label>
+            <input type="radio" id="q1c" name="q1" value="c">
+            <label for="q1c">c)Java, C++, Python, Ruby, C</label>
+            <input type="radio" id="q1d" name="q1" value="d">
+            <label for="q1d">d)Python, C, JavaScript, Go, CSS</label>
+            <button class="proximo" onclick="avancar('01','02')">Próxima questão</button>
+        </div>
+        <div id="Question02" class="question quest02">
+            <h3>Pergunta 02: Qual linguagem de programação a seguir é de baixo nível? </h3>
+            <input type="radio" id="q2a" name="q2" value="a">
+             <label for="q2a">a)Python</label>
+            <input type="radio" id="q2b" name="q2" value="b">
+            <label for="q2b">b)C</label>
+            <input type="radio" id="q2c" name="q2" value="c">
+            <label for="q2c">c)Ruby</label>
+            <input type="radio" id="q2d" name="q2" value="d">
+            <label for="q2d">d)PHP</label>
+            <button class="proximo" onclick="avancar('02','03')">Próxima questão</button>
+        </div>
+        <div id="Question03" class="question quest03">
+            <h3>Pergunta 03: Qual foi a primeira linguagem de programação? </h3>
+            <input type="radio" id="q3a" name="q3" value="a">
+            <label for="q3a">a)Assembly</label>
+            <input type="radio" id="q3b" name="q3" value="b">
+            <label for="q3b">b)C</label>
+            <input type="radio" id="q3c" name="q3" value="c">
+            <label for="q3c">c)COBOL</label>
+            <input type="radio" id="q3d" name="q3" value="d">
+            <label for="q3d">d)Fortran</label>
+            <button class="proximo" onclick="avancar('03','04')">Próxima questão</button>
+        </div>
+        <div id="Question04" class="question quest04">
+            <h3>Pergunta 04:Qual é a função do método forEach em JavaScript?</h3>
+
+            <input type="radio" id="q4a"  name="q4" value="a">
+            <label for="q4a">a)O método forEach é usado para iterar sobre os elementos de um array, executando uma função de retorno de chamada para cada elemento.</label>
+            <input type="radio" id="q4b" name="q4" value="b">
+            <label for="q4b">b) O método forEach é usado para criar uma cópia superficial de um array.</label>
+            <input type="radio" id="q4c" name="q4" value="c">
+            <label for="q4c">c)O método forEach é usado para adicionar um novo elemento a um array.</label>
+            <input type="radio" id="q4d" name="q4" value="d">
+            <label for="q4d">d)O método forEach é usado para ordenar os elementos de um array em ordem alfabética.</label>
+            <button class="proximo" onclick="avancar('04','05')">Próxima questão</button>
+        </div>
+        <div id="Question05" class="question quest05">
+            <h3>Pergunta 05: Qual das seguintes opções melhor descreve a diferença entre o front end e o back end em uma aplicação web? </h3>
+            <input type="radio" id="q5a" name="q5" value="a">
+            <label for="q5a">a)O front end é responsável pelo funcionamento interno do servidor, enquanto o back end lida com a interface do usuário.</label>
+            <input type="radio" id="q5b" name="q5" value="b">
+            <label for="q5b">b)O front end é a camada de hardware de um servidor, enquanto o back end é a camada de software responsável pelo processamento de solicitações do cliente.</label>
+            <input type="radio" id="q5c" name="q5" value="c">
+            <label for="q5c">c)O front end é responsável pela apresentação e interação do usuário, enquanto o back end gerencia a lógica e o armazenamento de dados.</label>
+            <input type="radio" id="q5d" name="q5" value="d">
+            <label for="q5d">d) O front end refere-se às tecnologias utilizadas para acessar a internet, enquanto o back end se concentra na segurança da rede.</label> 
+            <button id="result" onclick="resposta()">Enviar Respostas </button>
+        </div>
+       
+    </section>
+    <div id="resultFinal"></div>
+    <script src="js/script.js"></script>
+</body>
+</html>
