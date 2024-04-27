@@ -34,7 +34,7 @@ body{
     background-color: #ffffffb9;
     align-items: center;
     width: 520px;
-    height: 60px;
+    height: 65px;
     border: 2px solid #000000;
     box-shadow: 1px 1px 2px black;
     font-weight: 700;
@@ -68,10 +68,15 @@ input[type="radio"]:checked + label {
     border-radius: 5px;
     cursor: pointer;
 }
-.proximo,#result{
+.proximo{
     margin: auto;
 }
-.proximo:hover,.anterior:hover,#recomecar:hover{
+#result{
+    margin: auto;
+    position: relative;
+    top: -37px;
+}
+.proximo:hover,.anterior:hover,#recomecar:hover,#result:hover{
     background-color: #969696;
 }
 #resultFinal{
