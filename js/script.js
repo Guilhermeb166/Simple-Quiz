@@ -32,7 +32,7 @@ function resposta(){
     }else{
     document.getElementById('quiz').style.display = 'none'
     resultado.style.display='flex'
-    
+    document.getElementById('recomecar').style.display = 'block'
     var score = 0
     if(Q1[0].value == 'c'){
         score ++
@@ -50,11 +50,14 @@ function resposta(){
         score++
     }
     //calculando a pontuação
-
+    
     if(score>3){
     resultado.innerHTML= `Você acertou um total de ${score} Questões, Parabéns!!`
     }else{
         resultado.innerHTML= `Você acertou um total de ${score} Questões, estude mais!`
     }
 }
+}
+function reiniciar(){
+    window.location.reload()
 }

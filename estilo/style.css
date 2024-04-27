@@ -58,7 +58,7 @@ input[type="radio"]:checked + label {
 .botoes .anterior{
     margin: auto;
 }
-.proximo,#result,.anterior{
+.proximo,#result,.anterior,#recomecar{
     background-color: #b7b6b6;
     display: block;
     padding: 10px;
@@ -71,15 +71,23 @@ input[type="radio"]:checked + label {
 .proximo,#result{
     margin: auto;
 }
-.proximo:hover,.anterior:hover{
+.proximo:hover,.anterior:hover,#recomecar:hover{
     background-color: #969696;
 }
 #resultFinal{
     color: #fff;
     font: 700 3em arial;
     display: none;
-    height: 100vh;
+    height: 70vh;
     align-items: center;
     justify-content: center;
     text-shadow: 2px 1px 3px black;
+}
+#recomecar{
+    display: none;
+    margin: auto;
+    position: relative;
+    top: -200px;
+    width: 150px;
+   
 }
